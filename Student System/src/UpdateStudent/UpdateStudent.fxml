@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="804.0" prefWidth="600.0" style="-fx-background-color: F9C5D5;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UpdateStudent.UpdateStudent">
+   <children>
+      <Label layoutX="153.0" prefHeight="71.0" prefWidth="349.0" text="Update Student">
+         <font>
+            <Font name="Times New Roman Bold" size="48.0" />
+         </font>
+      </Label>
+      <TextField fx:id="name" alignment="CENTER" layoutX="33.0" layoutY="181.0" prefHeight="43.0" prefWidth="537.0" promptText="Name">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="24.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="email" alignment="CENTER" layoutX="32.0" layoutY="257.0" prefHeight="43.0" prefWidth="537.0" promptText="Email">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="24.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="address" alignment="CENTER" layoutX="33.0" layoutY="339.0" prefHeight="43.0" prefWidth="537.0" promptText="Address">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="24.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="number" alignment="CENTER" layoutX="33.0" layoutY="421.0" prefHeight="43.0" prefWidth="537.0" promptText="Number">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="24.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="nationality" alignment="CENTER" layoutX="33.0" layoutY="501.0" prefHeight="43.0" prefWidth="537.0" promptText="Nationality">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="24.0" />
+         </font>
+      </TextField>
+      <DatePicker fx:id="dob" editable="false" layoutX="33.0" layoutY="577.0" prefHeight="44.0" prefWidth="537.0" promptText="DOB">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </DatePicker>
+      <ChoiceBox fx:id="gender" layoutX="37.0" layoutY="651.0" prefHeight="44.0" prefWidth="530.0" />
+      <Button fx:id="back" layoutX="430.0" layoutY="733.0" mnemonicParsing="false" onAction="#Back" prefHeight="57.0" prefWidth="118.0" style="-fx-background-color: FFE699;" text="Back">
+         <font>
+            <Font name="Times New Roman Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="delete" layoutX="235.0" layoutY="733.0" mnemonicParsing="false" onAction="#Delete" prefHeight="57.0" prefWidth="118.0" style="-fx-background-color: FFE699;" text="Delete">
+         <font>
+            <Font name="Times New Roman Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="update" layoutX="37.0" layoutY="737.0" mnemonicParsing="false" onAction="#Update" prefHeight="57.0" prefWidth="118.0" style="-fx-background-color: FFE699;" text="Update">
+         <font>
+            <Font name="Times New Roman Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="Search" layoutX="14.0" layoutY="85.0" mnemonicParsing="false" onAction="#Search" prefHeight="57.0" prefWidth="118.0" style="-fx-background-color: FFE699;" text="Search">
+         <font>
+            <Font name="Times New Roman Bold" size="24.0" />
+         </font>
+      </Button>
+      <TextField fx:id="search" alignment="CENTER" layoutX="143.0" layoutY="92.0" onAction="#SearchField" prefHeight="44.0" prefWidth="420.0" promptText="Id">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="24.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>

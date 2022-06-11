@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="769.0" prefWidth="600.0" style="-fx-background-color: F9C5D5;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ShowStudent.ShowStudent">
+   <children>
+      <Label layoutX="158.0" layoutY="14.0" prefHeight="71.0" prefWidth="349.0" text="Show Student">
+         <font>
+            <Font name="Times New Roman Bold" size="48.0" />
+         </font>
+      </Label>
+      <Button fx:id="back" layoutX="433.0" layoutY="677.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="118.0" style="-fx-background-color: FFE699;" text="Back">
+         <font>
+            <Font name="Times New Roman Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="Search" layoutX="47.0" layoutY="92.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="118.0" style="-fx-background-color: FFE699;" text="Search">
+         <font>
+            <Font name="Times New Roman Bold" size="24.0" />
+         </font>
+      </Button>
+      <TextField fx:id="search" alignment="CENTER" layoutX="190.0" layoutY="92.0" onAction="#SearchField" prefHeight="44.0" prefWidth="400.0" promptText="Search">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="24.0" />
+         </font>
+      </TextField>
+      <GridPane layoutX="20.0" layoutY="159.0" prefHeight="488.0" prefWidth="570.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="279.0" minWidth="10.0" prefWidth="170.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="400.0" minWidth="10.0" prefWidth="400.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Name" textAlignment="CENTER" wrappingWidth="167.6708984375">
+               <font>
+                  <Font name="Times New Roman Bold" size="36.0" />
+               </font>
+            </Text>
+            <TextField fx:id="name" alignment="CENTER" prefHeight="43.0" prefWidth="537.0" promptText="Name" GridPane.columnIndex="1">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="24.0" />
+               </font>
+            </TextField>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="GPA" textAlignment="CENTER" wrappingWidth="167.6708984375" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Times New Roman Bold" size="36.0" />
+               </font>
+            </Text>
+            <TextField fx:id="gpa" alignment="CENTER" prefHeight="43.0" prefWidth="537.0" promptText="GPA" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="24.0" />
+               </font>
+            </TextField>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Course 1" textAlignment="CENTER" wrappingWidth="167.6708984375" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Times New Roman Bold" size="36.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Course 2" textAlignment="CENTER" wrappingWidth="167.6708984375" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Times New Roman Bold" size="36.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Course 3" textAlignment="CENTER" wrappingWidth="167.6708984375" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Times New Roman Bold" size="36.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Course 4" textAlignment="CENTER" wrappingWidth="167.6708984375" GridPane.rowIndex="5">
+               <font>
+                  <Font name="Times New Roman Bold" size="36.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Course 5" textAlignment="CENTER" wrappingWidth="167.6708984375" GridPane.rowIndex="6">
+               <font>
+                  <Font name="Times New Roman Bold" size="36.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Course 6" textAlignment="CENTER" wrappingWidth="167.6708984375" GridPane.rowIndex="7">
+               <font>
+                  <Font name="Times New Roman Bold" size="36.0" />
+               </font>
+            </Text>
+            <TextField fx:id="course1" alignment="CENTER" prefHeight="43.0" prefWidth="537.0" promptText="Course 1" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="24.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="course2" alignment="CENTER" prefHeight="43.0" prefWidth="537.0" promptText="Course 2" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="24.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="course3" alignment="CENTER" prefHeight="43.0" prefWidth="537.0" promptText="Course 3" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="24.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="course4" alignment="CENTER" prefHeight="43.0" prefWidth="537.0" promptText="Course 4" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="24.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="course5" alignment="CENTER" prefHeight="43.0" prefWidth="537.0" promptText="Course 5" GridPane.columnIndex="1" GridPane.rowIndex="6">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="24.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="course6" alignment="CENTER" prefHeight="43.0" prefWidth="537.0" promptText="Course 6" GridPane.columnIndex="1" GridPane.rowIndex="7">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="24.0" />
+               </font>
+            </TextField>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
